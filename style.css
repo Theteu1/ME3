@@ -1,0 +1,18 @@
+header {
+    position: fixed;
+    background-color: rgb(22, 22, 22);
+    height: 100px; /* Define a altura do cabeçalho */
+    width: 100%; /* Define a largura do cabeçalho */
+    top: 0; /* Garante que o topo do header fique colado ao topo da página */
+    left: 0px;
+      
+}
+
+.logo {
+    position: absolute;
+    top: -10px;
+}
+
+body{
+    background: rgb(37, 37, 37);
+}
