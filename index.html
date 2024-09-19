@@ -1,62 +1,57 @@
-<!--doctype html-->
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--==Title==================================-->
-<title>MHD - Full HD Movies</title>
-<!--Stylesheet(CSS)==========================-->
-<link rel="stylesheet" href="css/style.css"/>
-<!--==Fav-icon===============================-->
-<link rel="shortcut icon" href="imagens/fav-icon.png"/>
-<!--==Import-poppins-font====================-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!--==Import-Monoton-Font====================-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-<!--==Using-Font-Awesome======================-->
-<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-<!--==CSS-Swiper==============================-->
-<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManoFlix</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="imagens/fav-icon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--==Scroll-Progress-bar=========================-->
-    <div id="progress">
-        <span id="progress-value"></span>
-    </div>
-    <!--==Navigation===================================-->
     <nav class="navigation">
-        <!--menu-btn--------------->
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
             <span class="nav-icon"></span>
         </label>
-        <!--logo------------------->
-        <a href="index.html" class="logo">
-            MANO<span>FLIX</span>
-        </a>
-        <!--menu------------------->
+        <a href="index.html" class="logo">MANO<span>FLIX</span></a>
         <ul class="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Genre</a></li>
+            <li><a href="#"></a></li>
             <li><a href="#">Series</a></li>
             <li><a href="#">Filmes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#"></a></li>
         </ul>
-        <!--Search-box------------->
         <form action="" class="search-box">
-            <!--input-->
             <input type="text" name="search" placeholder="Search Movie" class="search-input" required/>
-            <!--btn-->
-            <button type="submit">
-                <i class="fas fa-search"></i>
-            </button>
+            <button type="submit"><i class="fas fa-search"></i></button>
         </form>
     </nav>
-    <!--nav-end-->
 
+
+    <div class="destaque">
+        <img src="./imagens/p-2.jpg" alt="">
+
+
+        <div class="legenda">
+            <h1>Piratas do Caribe</h1>
+
+
+            <ul class="menu2">
+                <li><a href="#">2023</a></li>
+                <li><a href="#">1h 50min</a></li>
+                <i class="ri-time-line icon-custom"></i>
+               
+            </ul>
+
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure doloremque voluptas dignissimos similique animi autem consequatur suscipit sapiente consectetur nam, eum tenetur ipsa eius totam ut unde molestiae voluptate!</p>
+
+
+        </div>
+    </div>
 </body>
 </html>

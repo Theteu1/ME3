@@ -4,6 +4,7 @@
     font-family: poppins;
     box-sizing: border-box;
 }
+
 body{
     margin: 0px;
     padding: 0px;
@@ -34,7 +35,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 30px 50px;
-    max-width: 1400px;
+    max-width: 2000px;
     margin: auto;
     width: 100%;
 }
@@ -166,4 +167,42 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+
+/*--destaque----*/
+.destaque{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.icon-custom {
+    color: red; /* Troque 'red' pela cor desejada */
+    font-size: 48px; /* Ajuste o tamanho se necessário */
+}
+.destaque img{
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    filter: brightness(45%);
+}
+
+
+.destaque:hover{
+
+
+}
+
+
+.legenda{
+    display: flex;
+    color: white;
+}
+
+
+.legenda li a {
+    text-decoration: none;
+    color: white;
 }
