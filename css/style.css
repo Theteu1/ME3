@@ -223,4 +223,178 @@ body{
     margin-top: 10px;
 }
 
+/* Seção Top Filmes Destaques */
+.top-filmes-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.top-filmes-section h1 {
+    color: #e70634;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.filmes-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Aumenta a margem entre os filmes */
+    
+}
+
+.filme {
+    position: relative;
+    width: 500px; /* Largura da div do filme */
+    padding-left: 100px; /* Adiciona espaço extra à esquerda para o número */
+    transition: transform 0.3s ease;
+    display: flex;
+    overflow: hidden; /* Garante que o conteúdo extra seja oculto */
+}
+
+.filme img {
+    width: 400px; /* Mantém a largura da imagem fixa */
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+.numero-filme {
+    position: absolute;
+    left: 49px; /* Move o número para fora da imagem */
+    font-size: 8rem;
+    color: rgb(255, 255, 255); /* Cor branca para garantir visibilidade */
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 2; /* Garante que o número esteja acima do filme */
+    
+}
+
+/*==Latest===================================*/
+#latest{
+    max-width: 1170px;
+    margin: 30px auto;
+    width: 100%;
+}
+.latest-heading{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0e0e0ec2;
+    border: 1px solid #161616b9;
+}
+.latest-heading h1{
+    color: #dadada;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.post-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin: 20px 0px;
+}
+.post-box{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    background-color: #0e0e0ec2;
+    border: 1px solid #161616b9;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.15);
+    position: relative;
+}
+.post-box .post-img{
+    width: 100%;
+    height: 100%;
+}
+.post-box .post-img img{
+    width: 100%;
+    height: 100%;
+    object-position: top center;
+    object-fit: cover;
+}
+.main-slider-text .movie-name a:hover{
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+/*page-number-----*/
+.page-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #464646;
+    margin-top: 50px;
+}
+.page-number a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 0px 13px;
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+.page-number .page-active,
+.page-number a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+/*==footer=========================*/
+footer{
+    background-color: #0e0e0ec2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+footer .copyright{
+    color: #4d4d4d;
+    font-size: 0.9rem;
+}
+footer .logo{
+    margin: 0px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+/*==fix-menu-btn========*/
+.fix-icon .menu-icon{
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    background-color: #1c1f25;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*==scroll-progress-bar=============*/
+#progress{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    display: grid;
+    place-items: center;
+    z-index:105;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 5px);
+    width: calc(100% - 5px);
+    background-color: #1c1f25;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 0px;
+}
+
 
