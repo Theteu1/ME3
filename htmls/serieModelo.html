@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManoFlix - Modelo</title>
+    <link rel="stylesheet" href="../css/serieModelo.css"/>
+    <link rel="shortcut icon" href="imagens/fav-icon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+        <a href="../index.html" class="logo">MANO<span>FLIX</span></a>
+        <ul class="menu">
+            <li><a href="../index.html"><img src="../imagens/silhueta-de-icone-de-casa.png" alt="home-icon" class="home-icon"> Home</a></li>
+            <li><a href="../htmls/series.html"><img src="../imagens/programa-de-tv.png" alt="serie-icon" class="serie-icon">Series</a></li>
+            <li><a href="../htmls/filme.html"><img src="../imagens/claquete.png" alt="film-icon" class="film-icon">Filmes</a></li>
+        </ul>
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required/>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </nav>
+
+   
+    <div class="destaque">
+    <img src="../imagens/dragon-ball-z-capa.png" alt="Imagem do Filme/Série">
+    <div class="legenda">
+        <h1>Dragon Ball Z</h1>
+
+        <div class="actions">
+            <div class="button-text">Série</div>
+            <i class="ri-alert-line"></i> 
+            <i class="ri-heart-line"></i> 
+            <a class="trailer" href="https://www.youtube.com/watch?v=tloraopWVuk&pp=ygUaZHJhZ29uIGJhbGwgeiB0cmFpbGVyIDE5ODk%3D" title="Ver Trailer">Ver Trailer > </a> 
+        </div>
+
+        <ul class="detalhes-principais">
+            <li><i class="ri-movie-2-line"></i> <strong>Ano:</strong> <span class="destaque-fosco">1989</span></li>
+            <li><i class="ri-time-line"></i> <strong>Duração:</strong> <span class="destaque-fosco">9 Temporadas</span></li>
+            <li>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star"></i>
+            </li>
+        </ul>
+        <ul class="detalhes">
+            <li><i class="ri-user-line"></i> <strong>Diretor:</strong> <span class="destaque-fosco">Akira Toriyama</span></li>
+            <li><i class="ri-team-line"></i> <strong>Elenco:</strong> <span class="destaque-fosco">Masako Nozawa, Ryo Horikawa, Hiromi Tsuru, Takeshi Kusao, Norio Wakamoto</li>
+        </ul>
+        <p class="sinopse">
+            As aventuras de um poderoso guerreiro chamado Goku, seu filho Gohan e seus aliados, que se esforçam para defender a Terra das ameaças. Eles são auxiliados por um dragão que concede os desejos de quem quer que reúna as sete Esferas do Dragão.
+        </p>
+        <button class="btn-filme-serie">Assistir</button> <!-- Trocar o texto para "Série" se for o caso -->
+        
+    </div>
+
+    
+    
+</div>
+    </div>
+
+    <!-- Seção de Comentários -->
+    <div class="comentarios">
+        <h2>Comentários</h2>
+        <form action="" class="form-comentario">
+            <textarea name="comentario" placeholder="Deixe seu comentário aqui..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="comentarios-lista">
+            <div class="comentario">
+                <p><strong>Miguel Nunes:</strong> Completamente apaixonado pelo Goku!</p>
+            </div>
+            <div class="comentario">
+                <p><strong>Marllon Vicente:</strong> Sensacional! Amo o Piccolo</p>
+            </div>
+            <div class="comentario">
+                <p><strong>José Nery:</strong> Naruto é mais legal :/</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

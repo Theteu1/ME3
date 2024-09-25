@@ -1,0 +1,380 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: #080808;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+::selection{
+    background-color: #e70634;
+    color: #080808;
+}
+/*==Hide-Default-Scroll-Bar=================*/
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*==navigation===============================*/
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    max-width: 2000px;
+    margin: auto;
+    width: 100%;
+}
+.navigation .menu-icon{
+    cursor: pointer;
+    float: right;
+    padding: 20px 10px;
+    z-index: 107;
+}
+.navigation .menu-icon .nav-icon{
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+.navigation .menu-icon .nav-icon::before,
+.navigation .menu-icon .nav-icon::after{
+    background-color: #ffffff;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+}
+.navigation .menu-icon .nav-icon::before{
+    top: 8px;
+}
+.navigation .menu-icon .nav-icon::after{
+    top: -8px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0px;
+}
+.menu-btn{
+    display: none;
+}
+ 
+/*--menu-------------*/
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #111111f1;
+    z-index: 106;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fade 0.3s;
+}
+.menu li a{
+    color: #ffffff;
+    margin: 0px 40px;
+    font-size: 2rem;
+    font-family: Monoton;
+    transition: all ease 0.3s;
+}
+.menu li a:hover{
+    font-size: 2.3rem;
+    color: #e70634;
+    transition: all ease 0.3s;
+}
+ 
+.navigation .menu-btn:checked ~ .menu{
+    display: flex;
+}
+ 
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.home-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+.serie-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+.film-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+
+
+/*--logo--------------*/
+.logo{
+    color: #e70634;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0px auto 0px 40px;
+    display: flex;
+    align-items: center;
+    font-family: Monoton;
+    letter-spacing: 1px;
+}
+.logo span{
+    font-size: 0.7rem;
+    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/*--search-box----*/
+.search-box{
+    background-color: #d1d1d111;
+    padding: 3px 20px;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+.search-box input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+.search-box input::placeholder{
+    color: #ffffff5e;
+}
+.search-box button{
+    background-color: transparent;
+    color: #ffffffc9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*--destaque----*/
+.destaque {
+    display: flex; /* Usar flexbox para alinhar a imagem e o conteúdo */
+    width: 100%;
+    height: 500px; /* Altura fixa para a seção */
+    overflow: hidden; /* Para garantir que os elementos fiquem dentro da div */
+}
+
+.imagem{
+    flex: 0 0 35%; /* A imagem ocupa 35% do espaço */
+    max-width: 35%; /* Limita a largura máxima da imagem */
+}
+
+.destaque img {
+    width: auto; /* Permite que a largura se ajuste automaticamente */
+    height: 100%; /* Preenche toda a altura da div */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    filter: brightness(25%);
+    transition: all 0.5s ease; /* Transição suave ao passar o mouse */
+}
+
+
+.legenda {
+    flex: 1; /* O conteúdo ocupa o restante do espaço */
+    padding: 20px; /* Adiciona um padding ao conteúdo */
+    text-align: start;
+    color: #ffffff;
+}
+
+.legenda h1 {
+    font-size: 3rem;
+}
+
+.detalhes {
+    margin: 20px 0;
+}
+
+.detalhes li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.detalhes-principais {
+    display: flex; /* Usar Flexbox para alinhar os itens em linha */
+    justify-content: left; 
+}
+
+.detalhes-principais li {
+    font-size: 1.1rem;
+    margin-right: 20px; /* Espaçamento entre os itens */
+    /* Se você preferir um padding em vez de margin, use: */
+}
+
+.sinopse {
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #bbbbbb;
+}
+
+.btn-filme-serie {
+    padding: 12px 25px; /* Aumenta o tamanho do botão */
+    background: linear-gradient(135deg, #e70634, #a50524); /* Gradiente para dar mais profundidade */
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold; /* Deixa o texto mais destacado */
+    cursor: pointer;
+    border-radius: 30px; /* Bordas mais arredondadas para suavidade */
+    box-shadow: 0px 4px 15px rgba(231, 6, 52, 0.4); /* Adiciona uma sombra para efeito 3D */
+    transition: all 0.3s ease; /* Transição suave ao interagir */
+}
+
+.btn-filme-serie:hover {
+    background: linear-gradient(135deg, #ff1c4a, #b20730); /* Cores mais brilhantes no hover */
+    box-shadow: 0px 6px 20px rgba(255, 28, 74, 0.6); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+.btn-filme-serie:active {
+    background: linear-gradient(135deg, #c20528, #90041c); /* Cores mais escuras no clique */
+    box-shadow: 0px 2px 10px rgba(144, 4, 28, 0.6); /* Reduz a sombra no clique */
+    transform: translateY(2px); /* Simula o "pressionar" do botão */
+}
+
+
+/*==comentários===============================*/
+.comentarios {
+    padding: 50px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.comentarios h2 {
+    margin-bottom: 20px;
+}
+
+.form-comentario textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #333333;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form-comentario button {
+    padding: 10px 20px;
+    background-color: #e70634;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comentarios-lista .comentario {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #262626;
+    border-radius: 5px;
+    display: inline-block; 
+    max-width: 100%; 
+}
+
+.ri-star-fill:first-child {
+    margin-left: 10px;
+}
+
+.destaque-fosco{
+    color: #bbbbbb;
+}
+
+.button-text{
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #202020;
+    border-radius: 7px;
+    display: inline-block;
+    color: #bbbbbb;
+}
+
+.ri-alert-line{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #202020;
+    border-radius: 7px;
+    color: #bbbbbb;
+}
+
+.ri-heart-line{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #202020;
+    border-radius: 7px;
+    color: #bbbbbb;
+}
+
+.actions {
+    display: flex; /* Cria um contêiner flexível */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.trailer{
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #202020;
+    border-radius: 7px;
+    color: #bbbbbb;
+}
+
+
