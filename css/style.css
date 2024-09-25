@@ -326,9 +326,8 @@ body{
     border: 1px solid #161616b9;
 }
 .latest-heading h1{
-    color: #dadada;
-    font-size: 1.3rem;
-    font-weight: 500;
+    color: #e70634;
+    font-size: 2.5rem;
 }
 .post-container{
     display: grid;
