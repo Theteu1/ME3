@@ -123,6 +123,30 @@ body{
         opacity: 1;
     }
 }
+
+.home-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+.serie-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+.film-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+
+
 /*--logo--------------*/
 .logo{
     color: #e70634;
@@ -236,6 +260,7 @@ body{
     font-size: 2.5rem;
 }
 
+
 .filmes-container {
     display: flex;
     justify-content: center;
@@ -265,12 +290,25 @@ body{
 
 .numero-filme {
     position: absolute;
-    left: 49px; /* Move o número para fora da imagem */
-    font-size: 8rem;
+    left: 13px; /* Move o número para fora da imagem */
+    font-size: 14rem;
+    color: rgb(255, 255, 255); /* Cor branca para garantir visibilidade */
+    bottom: -57px;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: -1; /* Garante que o número esteja acima do filme */
+    
+}
+
+.numero-filme1 {
+    position: absolute;
+    left: 45px; /* Move o número para fora da imagem */
+    font-size: 14rem;
+    bottom: -49px;
     color: rgb(255, 255, 255); /* Cor branca para garantir visibilidade */
     font-weight: bold;
     pointer-events: none;
-    z-index: 2; /* Garante que o número esteja acima do filme */
+    z-index: -1; /* Garante que o número esteja acima do filme */
     
 }
 

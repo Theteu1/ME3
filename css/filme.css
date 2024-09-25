@@ -123,6 +123,31 @@ body{
         opacity: 1;
     }
 }
+
+
+.home-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+.serie-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+.film-icon {
+    width: 29px; /* Ajuste o tamanho conforme necessário */
+    height: 29px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente */
+}
+
+
+
 /*--logo--------------*/
 .logo{
     color: #e70634;
