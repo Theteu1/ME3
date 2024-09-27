@@ -335,24 +335,35 @@ body{
     margin: 20px 0px;
 }
 .post-box{
-    width: 100%;
-    height: 550px;
-    overflow: hidden;
-    background-color: #0e0e0ec2;
-    border: 1px solid #161616b9;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.15);
     position: relative;
+    width: 300px;  /* Largura fixa */
+    height: 500px; /* Altura fixa */
+    margin: 10px;
+    overflow: hidden; /* Garante que o conteúdo que ultrapassar será cortado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .post-box .post-img{
     width: 100%;
     height: 100%;
 }
+
 .post-box .post-img img{
     width: 100%;
     height: 100%;
     object-position: top center;
     object-fit: cover;
+    border-radius: 10px;
+
 }
+
+.post-box:hover .post-img img {
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+
 .main-slider-text .movie-name a:hover{
     opacity: 0.5;
     transition: all ease 0.3s;
@@ -434,4 +445,30 @@ footer .logo{
     font-size: 0px;
 }
 
+.post-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.post-img:hover .post-info {
+    opacity: 1;
+}
+
+.post-info h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.post-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
 
